@@ -1,0 +1,53 @@
+# Needs @brain/core-types, connector-kit and connectors published to GitHub Packages.
+# Red until the registry decision lands: see docs/shared-contracts.md.
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: pnpm/action-setup@v4
+        with: { version: 8.15.0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 26, cache: pnpm }
+      - run: pnpm install --no-frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN }}
+      - run: pnpm structure
+      - run: pnpm guard:fakes
+      - run: pnpm exec biome check .
+      - run: pnpm deps
+      - run: pnpm -r build
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm mutation
+      - run: pnpm exec commitlint --from ${{ github.event.pull_request.base.sha || 'HEAD~1' }} --to HEAD
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 8.15.0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 26, cache: pnpm }
+      - run: pnpm install --no-frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN }}
+      - run: pnpm -r build
+      - run: pnpm integration
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: gitleaks
+        run: |
+          curl -sSfL https://github.com/gitleaks/gitleaks/releases/download/v8.28.0/gitleaks_8.28.0_linux_x64.tar.gz | tar -xz gitleaks
+          ./gitleaks detect --source . --config .gitleaks.toml --redact --verbose
+      - uses: google/osv-scanner-action/osv-scanner-action@v2.7.0
+        with: { scan-args: "--lockfile=pnpm-lock.yaml" }
