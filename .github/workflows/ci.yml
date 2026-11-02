@@ -1,5 +1,7 @@
-# Needs @brain/core-types, connector-kit and connectors published to GitHub Packages.
-# Red until the registry decision lands: see docs/shared-contracts.md.
+# BLOCKED: registry consumption (pnpm install against GitHub Packages) does not work
+# until @anvesx/core-types and @anvesx/connector-kit packages are public.
+# This workflow stays red until then. Local installs use the gitignored .pnpmfile.cjs links.
+# See docs/shared-contracts.md.
 name: ci
 on:
   pull_request:
