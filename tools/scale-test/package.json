@@ -1,0 +1,16 @@
+{
+  "name": "@rag/scale-test",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "scale": "k6 run src/search.js",
+    "scale:node": "node src/run.ts"
+  },
+  "devDependencies": {
+    "@types/autocannon": "7.12.7",
+    "autocannon": "8.0.0"
+  }
+}

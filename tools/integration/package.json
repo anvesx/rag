@@ -1,0 +1,30 @@
+{
+  "name": "@rag/integration",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "integration": "vitest run"
+  },
+  "dependencies": {
+    "@rag/audit-chain": "workspace:*",
+    "@rag/audit-service": "workspace:*",
+    "@rag/change-cursor": "workspace:*",
+    "@rag/chunker": "workspace:*",
+    "@brain/connector-kit": "^0.1.0",
+    "@rag/connector-runtime": "workspace:*",
+    "@brain/core-types": "^0.1.0",
+    "@rag/governance": "workspace:*",
+    "@rag/hybrid-search": "workspace:*",
+    "@rag/index-service": "workspace:*",
+    "@rag/ingestion": "workspace:*",
+    "@rag/pointer-registry": "workspace:*",
+    "@rag/query-service": "workspace:*",
+    "@rag/retrieval": "workspace:*"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2"
+  }
+}
