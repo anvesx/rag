@@ -16,7 +16,7 @@
     "lint": "biome check .",
     "deps": "depcruise features services modules apps --config .dependency-cruiser.cjs",
     "integration": "turbo run integration",
-    "mutation": "turbo run mutation",
+    "mutation": "turbo run mutation --concurrency=1",
     "changeset": "changeset",
     "release": "changeset publish"
   },
