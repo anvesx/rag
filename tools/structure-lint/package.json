@@ -1,0 +1,14 @@
+{
+  "name": "@rag/structure-lint",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "structure-lint": "bin/cli.mjs"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "mutation": "NODE_OPTIONS=--require=./scripts/stryker-ipc.cjs stryker run"
+  }
+}

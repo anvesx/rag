@@ -1,0 +1,13 @@
+{
+  "name": "@rag/fake-guard",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "fake-guard": "bin/cli.mjs"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  }
+}
