@@ -1,5 +1,5 @@
-import { type Connector, ConnectorError } from "@brain/connector-kit";
-import type { Pointer, Principal } from "@brain/core-types";
+import { type Connector, ConnectorError } from "@anvesx/connector-kit";
+import type { Pointer, Principal } from "@anvesx/core-types";
 import { describe, expect, it } from "vitest";
 import { toSearchFn } from "../../src/adapter.js";
 import { createConnectorLiveAcl, RetrievalError } from "../../src/index.js";

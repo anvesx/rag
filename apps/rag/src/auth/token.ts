@@ -1,5 +1,5 @@
 import { timingSafeEqual } from "node:crypto";
-import type { Principal } from "@brain/core-types";
+import type { Principal } from "@anvesx/core-types";
 import { need, parse, sign } from "./claims.js";
 
 export { MIN_SECRET_CHARS } from "./claims.js";

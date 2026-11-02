@@ -1,4 +1,4 @@
-import type { Connector, ListedDoc } from "@brain/connector-kit";
+import type { Connector, ListedDoc } from "@anvesx/connector-kit";
 import type { CursorStore } from "@rag/change-cursor";
 import { failureStore } from "./state/failures.js";
 import { eventIdOf } from "./state/identity.js";

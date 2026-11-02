@@ -1,5 +1,5 @@
 import { createHmac } from "node:crypto";
-import type { Pointer, Principal } from "@brain/core-types";
+import type { Pointer, Principal } from "@anvesx/core-types";
 import { describe, expect, it, vi } from "vitest";
 import { auditedSearch, RetrievalError } from "../../src/index.js";
 import { auditKey, fakeAudit } from "../harness.js";

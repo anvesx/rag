@@ -1,4 +1,4 @@
-import { contentHash } from "@brain/connector-kit";
+import { contentHash } from "@anvesx/connector-kit";
 import { type ChangeEvent, createConnectorRuntime, createKeyedLock } from "@rag/connector-runtime";
 import { IngestionError } from "./errors.js";
 import { reapSkip } from "./pipeline/guard.js";

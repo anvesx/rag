@@ -1,4 +1,4 @@
-import type { Pointer, Principal } from "@brain/core-types";
+import type { Pointer, Principal } from "@anvesx/core-types";
 import { type LiveQueryService, QueryError, type SearchResult, validate } from "@rag/query-service";
 import { RetrievalError } from "./errors.js";
 

@@ -2,7 +2,7 @@ import { mkdtempSync, readdirSync, readFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { DatabaseSync } from "node:sqlite";
-import type { Acl } from "@brain/core-types";
+import type { Acl } from "@anvesx/core-types";
 import { describe, expect, it } from "vitest";
 import { createSearchIndex, SearchError } from "../../src/index.js";
 

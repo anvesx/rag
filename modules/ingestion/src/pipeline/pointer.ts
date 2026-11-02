@@ -1,5 +1,5 @@
-import { contentHash, type ListedDoc } from "@brain/connector-kit";
-import type { Pointer } from "@brain/core-types";
+import { contentHash, type ListedDoc } from "@anvesx/connector-kit";
+import type { Pointer } from "@anvesx/core-types";
 import type { ChangeEvent } from "@rag/connector-runtime";
 
 /** Stable pointer id for one document of one connector. */

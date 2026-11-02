@@ -1,4 +1,4 @@
-import { ConnectorError } from "@brain/connector-kit";
+import { ConnectorError } from "@anvesx/connector-kit";
 import { doc, scratch } from "../../src/fixtures.js";
 import { createSource, type Source } from "../../src/source.js";
 import { openStack, type Stack } from "../../src/stack.js";

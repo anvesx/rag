@@ -1,4 +1,4 @@
-import type { Acl } from "@brain/core-types";
+import type { Acl } from "@anvesx/core-types";
 import { describe, expect, it } from "vitest";
 import { createSearchIndex, MAX_WINDOW, SearchError } from "../../src/index.js";
 

@@ -1,4 +1,4 @@
-import type { Pointer, Principal } from "@brain/core-types";
+import type { Pointer, Principal } from "@anvesx/core-types";
 import type { AuditService } from "@rag/audit-service";
 import { createQueryService, type QueryDeps } from "@rag/query-service";
 import { auditedOutcome, createConnectorLiveAcl, toOutcomeFn, toSearchFn } from "@rag/retrieval";

@@ -1,6 +1,6 @@
 import type { Readable, Writable } from "node:stream";
-import type { Connector } from "@brain/connector-kit";
-import type { Pointer, Principal } from "@brain/core-types";
+import type { Connector } from "@anvesx/connector-kit";
+import type { Pointer, Principal } from "@anvesx/core-types";
 import type { CursorStore } from "@rag/change-cursor";
 import type { Governance } from "@rag/governance";
 import type { IngestionCounts } from "@rag/ingestion";

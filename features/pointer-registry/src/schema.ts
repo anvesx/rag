@@ -1,4 +1,4 @@
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 
 /** Every column the table has. None can hold document body text. */
 export const COLUMNS = [

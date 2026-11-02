@@ -1,6 +1,6 @@
 import { mkdirSync } from "node:fs";
 import { join } from "node:path";
-import type { Pointer, Principal } from "@brain/core-types";
+import type { Pointer, Principal } from "@anvesx/core-types";
 import { createAuditChain } from "@rag/audit-chain";
 import { createAuditService, createFileAnchorStore } from "@rag/audit-service";
 import { createCursorStore } from "@rag/change-cursor";

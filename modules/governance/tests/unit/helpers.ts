@@ -1,5 +1,5 @@
 import { createHmac } from "node:crypto";
-import type { Pointer, Principal } from "@brain/core-types";
+import type { Pointer, Principal } from "@anvesx/core-types";
 import { createGovernance } from "../../src/index.js";
 
 export const alice: Principal = { id: "alice", tenantId: "t1", groups: [] };

@@ -1,4 +1,4 @@
-import type { Principal } from "@brain/core-types";
+import type { Principal } from "@anvesx/core-types";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { registerSearchTool, type SearchFn } from "@rag/mcp-search-tool";
 

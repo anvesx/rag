@@ -1,4 +1,4 @@
-import type { Connector } from "@brain/connector-kit";
+import type { Connector } from "@anvesx/connector-kit";
 import type { CursorStore } from "@rag/change-cursor";
 
 /** One document at one version and ACL, delivered to the sink at most once per tenant. */

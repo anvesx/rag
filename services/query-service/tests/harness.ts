@@ -1,4 +1,4 @@
-import type { Pointer, Principal, Zone } from "@brain/core-types";
+import type { Pointer, Principal, Zone } from "@anvesx/core-types";
 import { createSearchIndex } from "@rag/hybrid-search";
 import { createRegistry } from "@rag/pointer-registry";
 import { createQueryService } from "../src/index.js";

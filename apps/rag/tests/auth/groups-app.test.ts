@@ -1,4 +1,4 @@
-import { createFakeConnector } from "@brain/connector-kit/testing";
+import { createFakeConnector } from "@anvesx/connector-kit/testing";
 import { describe, expect, it } from "vitest";
 import { mintToken, signedPrincipalFor } from "../../src/auth/token.js";
 import { call, connect, doc, idsOf, start } from "../harness.js";

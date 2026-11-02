@@ -1,4 +1,4 @@
-import type { Pointer, Principal } from "@brain/core-types";
+import type { Pointer, Principal } from "@anvesx/core-types";
 import type { SearchResult } from "@rag/query-service";
 import { describe, expect, it, vi } from "vitest";
 import { type Outcome, toOutcomeFn } from "../../src/adapter.js";

@@ -48,7 +48,7 @@ export const checkTiers = (root: string, packages: readonly PackageInfo[] | read
     manifest.dependencies.flatMap((dependency) => {
       const target = byName.get(dependency);
       if (!target) return [];
-      const coreTypes = dependency === "@brain/core-types" && manifest.name !== dependency;
+      const coreTypes = dependency === "@anvesx/core-types" && manifest.name !== dependency;
       if (coreTypes || allowed[info.tier].includes(target.info.tier)) return [];
       return [
         {

@@ -1,4 +1,4 @@
-import { ConnectorError } from "@brain/connector-kit";
+import { ConnectorError } from "@anvesx/connector-kit";
 import type { CursorStore } from "@rag/change-cursor";
 import { createDeliver } from "./deliver.js";
 import { RuntimeError } from "./errors.js";

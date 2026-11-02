@@ -1,6 +1,6 @@
 import { createServer, type IncomingMessage, type ServerResponse } from "node:http";
 import type { AddressInfo } from "node:net";
-import { type Principal, PrincipalSchema } from "@brain/core-types";
+import { type Principal, PrincipalSchema } from "@anvesx/core-types";
 import { isInitializeRequest } from "@modelcontextprotocol/sdk/types.js";
 import type { McpServerDeps } from "../build.js";
 import { McpServiceError } from "../errors.js";

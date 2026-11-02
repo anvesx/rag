@@ -1,4 +1,4 @@
-import { type Pointer, PointerSchema, type Principal } from "@brain/core-types";
+import { type Pointer, PointerSchema, type Principal } from "@anvesx/core-types";
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { visibleTo } from "./filter.js";
 import { formatResults } from "./format.js";

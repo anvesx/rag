@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 import { type Content, IndexServiceError } from "../types.js";
 
 const sha256 = (text: string): string => createHash("sha256").update(text).digest("hex");

@@ -1,4 +1,4 @@
-import type { Acl } from "@brain/core-types";
+import type { Acl } from "@anvesx/core-types";
 
 export type Hit = { chunkId: string; docId: string; score: number };
 export type AclFragment = { sql: string; params: unknown[] };

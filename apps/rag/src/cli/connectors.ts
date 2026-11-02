@@ -1,6 +1,6 @@
-import type { Connector } from "@brain/connector-kit";
-import { createFolderConnector } from "@brain/connector-kit";
-import { createDriveConnector, createGithubConnector } from "@brain/connectors";
+import type { Connector } from "@anvesx/connector-kit";
+import { createFolderConnector } from "@anvesx/connector-kit";
+import { createDriveConnector, createGithubConnector } from "@anvesx/connectors";
 import type { Env, RagEnv } from "../config/index.js";
 
 export type Built = { connector: Connector; token: string };

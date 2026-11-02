@@ -4,9 +4,9 @@ Three packages are published from another repository and consumed here as depend
 
 | Package | Role |
 | --- | --- |
-| `@brain/core-types` | Document, pointer, principal and access-rule types. |
-| `@brain/connector-kit` | The connector interface and a fake connector for tests. |
-| `@brain/connectors` | The GitHub and Drive connector adapters. |
+| `@anvesx/core-types` | Document, pointer, principal and access-rule types. |
+| `@anvesx/connector-kit` | The connector interface and a fake connector for tests. |
+| `@anvesx/connectors` | The GitHub and Drive connector adapters. |
 
 The scope `@brain` belongs to the repository that publishes them, so these names stay as they are. Every package in this repository uses the neutral scope `@rag`.
 

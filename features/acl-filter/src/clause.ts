@@ -1,4 +1,4 @@
-import type { Principal } from "@brain/core-types";
+import type { Principal } from "@anvesx/core-types";
 
 export interface Clause {
   sql: string;

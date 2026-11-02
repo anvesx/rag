@@ -1,4 +1,4 @@
-import { ConnectorError } from "@brain/connector-kit";
+import { ConnectorError } from "@anvesx/connector-kit";
 import { describe, expect, it } from "vitest";
 import { alice, build, ok } from "./support.js";
 

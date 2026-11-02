@@ -1,4 +1,4 @@
-import type { Principal } from "@brain/core-types";
+import type { Principal } from "@anvesx/core-types";
 import { describe, expect, it } from "vitest";
 import { allowClause } from "../../../acl-filter/src/index.js";
 import { createSearchIndex } from "../../src/index.js";

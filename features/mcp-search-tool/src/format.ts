@@ -1,4 +1,4 @@
-import { type Pointer, PointerSchema } from "@brain/core-types";
+import { type Pointer, PointerSchema } from "@anvesx/core-types";
 
 export function formatResults(pointers: readonly Pointer[]): string {
   const validPointers = PointerSchema.array().parse(pointers);

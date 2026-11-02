@@ -1,4 +1,4 @@
-import type { Principal } from "@brain/core-types";
+import type { Principal } from "@anvesx/core-types";
 import type { AuditService } from "@rag/audit-service";
 import { type McpServiceOptions, startMcpServer } from "@rag/mcp-service";
 import { createQueryService, type QueryDeps } from "@rag/query-service";

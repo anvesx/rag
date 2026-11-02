@@ -1,4 +1,4 @@
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 import type { SearchRequest } from "@rag/query-service";
 import { createTargetDigest } from "./digest.js";
 import { GovernanceError } from "./errors.js";

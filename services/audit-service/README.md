@@ -34,7 +34,7 @@ await svc.verify("acme"); // { status: "ok" } | { status: "mismatch" | "truncate
 
 - Only checkpointed history is protected. Rows added after the last checkpoint can be removed undetected.
 - The anchor store is only as trustworthy as its location. Someone who can rewrite it can hide tampering.
-- `@brain/core-types` is not imported: nothing here needs it.
+- `@anvesx/core-types` is not imported: nothing here needs it.
 
 ## Test
 

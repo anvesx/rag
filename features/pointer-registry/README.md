@@ -7,7 +7,7 @@ asserts the exact column list. Spec: `docs/specs/feature/pointer-registry.md` (t
 ## What it does
 
 - Key is `(tenantId, id)`. Every method requires a non-empty `tenantId`, and every query filters on it, so one tenant cannot read another.
-- `upsert` validates with `PointerSchema` from `@brain/core-types`, then compares every stored field with the stored row: hash, version, source, address, title, zone, `deletedAt`, `acl.version` and both ACL lists (as sorted sets). All equal: `unchanged`, nothing written, the stored pointer is returned. `updatedAt` alone does not count as a change. New key: `created`. Otherwise `updated` and the whole row is rewritten.
+- `upsert` validates with `PointerSchema` from `@anvesx/core-types`, then compares every stored field with the stored row: hash, version, source, address, title, zone, `deletedAt`, `acl.version` and both ACL lists (as sorted sets). All equal: `unchanged`, nothing written, the stored pointer is returned. `updatedAt` alone does not count as a change. New key: `created`. Otherwise `updated` and the whole row is rewritten.
 - `tombstone` sets `deletedAt` and keeps the row. `get` and `list` hide tombstoned rows. Upserting the same key again revives it (reported as `updated`).
 - Each upsert runs in `BEGIN IMMEDIATE` with a primary key on `(tenant_id, id)`, so concurrent upserts of one key, even from two connections to one file, end with one row. Busy writers wait up to 10 s.
 - `list` pages by `id` in binary order. `afterId` is exclusive. Default limit 100, values above 1000 are clamped to 1000.

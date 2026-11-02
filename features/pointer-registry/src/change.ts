@@ -1,4 +1,4 @@
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 
 const same = (a: string[], b: string[]): boolean => {
   if (a.length !== b.length) return false;

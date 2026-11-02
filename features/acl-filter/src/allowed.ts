@@ -1,4 +1,4 @@
-import type { Acl, Principal } from "@brain/core-types";
+import type { Acl, Principal } from "@anvesx/core-types";
 
 /** Pure twin of allowClause. Deny by default. */
 export function isAllowed(p: Principal, acl: Acl, rowTenant: string): boolean {

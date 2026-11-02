@@ -1,4 +1,4 @@
-import type { Principal } from "@brain/core-types";
+import type { Principal } from "@anvesx/core-types";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";

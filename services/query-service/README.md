@@ -48,4 +48,4 @@ Mutation score is 98.4. The three survivors cannot change behaviour:
 
 ## Test
 
-`pnpm test`, `pnpm typecheck`, `pnpm mutation` from this folder. Tests use in-memory databases only. Build the features first: `pnpm --filter @brain/core-types build`, then acl-filter, hybrid-search, pointer-registry.
+`pnpm test`, `pnpm typecheck`, `pnpm mutation` from this folder. Tests use in-memory databases only. Build the features first: `pnpm --filter @anvesx/core-types build`, then acl-filter, hybrid-search, pointer-registry.

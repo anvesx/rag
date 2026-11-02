@@ -1,4 +1,4 @@
-import type { Principal } from "@brain/core-types";
+import type { Principal } from "@anvesx/core-types";
 import { createQueryService, type LiveAcl, type Verdict } from "../src/index.js";
 import { docs, grant, hit, pagedIndex, registryOf } from "./fakes.js";
 

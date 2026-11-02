@@ -1,4 +1,4 @@
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 import type { Chunk } from "@rag/chunker";
 import type { SearchIndex } from "@rag/hybrid-search";
 import type { Registry } from "@rag/pointer-registry";

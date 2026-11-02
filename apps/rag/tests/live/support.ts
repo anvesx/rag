@@ -1,5 +1,5 @@
-import { type Connector, ConnectorError } from "@brain/connector-kit";
-import { createFakeConnector } from "@brain/connector-kit/testing";
+import { type Connector, ConnectorError } from "@anvesx/connector-kit";
+import { createFakeConnector } from "@anvesx/connector-kit/testing";
 import { docs } from "../fixtures.js";
 
 /** Who the source lets read each address. Mutable: change it to simulate a revocation at the source. */

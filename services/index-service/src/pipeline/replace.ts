@@ -1,4 +1,4 @@
-import type { Acl, Pointer } from "@brain/core-types";
+import type { Acl, Pointer } from "@anvesx/core-types";
 import type { SearchIndex } from "@rag/hybrid-search";
 import type { Registry } from "@rag/pointer-registry";
 import { IndexServiceError } from "../types.js";

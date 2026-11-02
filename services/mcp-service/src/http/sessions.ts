@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import type { Principal } from "@brain/core-types";
+import type { Principal } from "@anvesx/core-types";
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { buildServer, type McpServerDeps } from "../build.js";

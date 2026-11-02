@@ -1,5 +1,5 @@
-import type { Connector } from "@brain/connector-kit";
-import type { Pointer, Principal } from "@brain/core-types";
+import type { Connector } from "@anvesx/connector-kit";
+import type { Pointer, Principal } from "@anvesx/core-types";
 import { createConnectorLiveAcl } from "../../src/index.js";
 
 export const alice: Principal = { id: "alice", tenantId: "t1", groups: [] };

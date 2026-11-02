@@ -1,4 +1,4 @@
-import type { Connector } from "@brain/connector-kit";
+import type { Connector } from "@anvesx/connector-kit";
 import type { Failure, RuntimeDeps } from "@rag/connector-runtime";
 import type { IndexService } from "@rag/index-service";
 

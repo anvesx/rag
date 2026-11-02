@@ -1,4 +1,4 @@
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 import type { AuditService } from "@rag/audit-service";
 import type { QueryService, SearchRequest } from "@rag/query-service";
 

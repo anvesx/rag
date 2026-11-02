@@ -3,7 +3,7 @@
 Spec: [docs/specs/service/connector-runtime.md](../../docs/specs/service/connector-runtime.md).
 
 Polls one connector for a tenant and delivers each document change to an injected sink exactly once.
-Depends only on `@brain/connector-kit`, `@rag/change-cursor` and `@brain/core-types`.
+Depends only on `@anvesx/connector-kit`, `@rag/change-cursor` and `@anvesx/core-types`.
 
 ## Interface
 

@@ -1,4 +1,4 @@
-import { type Pointer, type Principal, PrincipalSchema } from "@brain/core-types";
+import { type Pointer, type Principal, PrincipalSchema } from "@anvesx/core-types";
 import type { SearchIndex } from "@rag/hybrid-search";
 import type { Registry } from "@rag/pointer-registry";
 import { QueryError } from "./errors.js";

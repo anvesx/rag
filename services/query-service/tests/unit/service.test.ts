@@ -1,4 +1,4 @@
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 import { describe, expect, it } from "vitest";
 import { createQueryService, QueryError } from "../../src/index.js";
 import { alice } from "../harness.js";

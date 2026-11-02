@@ -1,4 +1,4 @@
-import type { Pointer, Principal } from "@brain/core-types";
+import type { Pointer, Principal } from "@anvesx/core-types";
 
 export type Verdict = "allow" | "deny" | "unknown";
 /** The signal aborts when the search's single deadline passes; implementations should stop work and may reject. */

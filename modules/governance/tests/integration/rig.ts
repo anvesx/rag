@@ -2,7 +2,7 @@ import { mkdtempSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { DatabaseSync } from "node:sqlite";
-import type { Pointer, Principal } from "@brain/core-types";
+import type { Pointer, Principal } from "@anvesx/core-types";
 import { createAuditChain } from "@rag/audit-chain";
 import { createAuditService, createFileAnchorStore } from "@rag/audit-service";
 import { createSearchIndex } from "@rag/hybrid-search";

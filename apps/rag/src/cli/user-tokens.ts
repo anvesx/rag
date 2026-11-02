@@ -1,6 +1,6 @@
 import { readFileSync, statSync } from "node:fs";
-import type { Connector } from "@brain/connector-kit";
-import type { Principal } from "@brain/core-types";
+import type { Connector } from "@anvesx/connector-kit";
+import type { Principal } from "@anvesx/core-types";
 
 function load(path: string): Map<string, string> {
   let parsed: unknown;

@@ -1,7 +1,7 @@
 import { mkdtempSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { createFakeConnector } from "@brain/connector-kit/testing";
+import { createFakeConnector } from "@anvesx/connector-kit/testing";
 import { afterAll, describe, expect, it } from "vitest";
 import { docs, start } from "../harness.js";
 

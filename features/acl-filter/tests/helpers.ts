@@ -1,5 +1,5 @@
 import { DatabaseSync } from "node:sqlite";
-import type { Acl, Principal } from "@brain/core-types";
+import type { Acl, Principal } from "@anvesx/core-types";
 import { allowClause } from "../src/index.js";
 
 export interface Row {

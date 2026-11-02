@@ -1,4 +1,4 @@
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 import type { RagDeps } from "../types.js";
 
 /** `deps.fetchText` when given; otherwise reads the pointer's address through its tenant's connector with the tenant credential. */

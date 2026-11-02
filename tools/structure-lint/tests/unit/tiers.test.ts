@@ -14,7 +14,7 @@ describe("tier direction rule", () => {
   it("allows only the documented downward dependency edges", () => {
     const entries = [
       manifest("features/core-types"),
-      manifest("features/one", { "@brain/core-types": "workspace:*" }),
+      manifest("features/one", { "@anvesx/core-types": "workspace:*" }),
       manifest("services/api", { "@brain/one": "workspace:*" }),
       manifest("modules/search", { "@brain/api": "workspace:*", "@brain/one": "workspace:*" }),
       manifest("apps/web", { "@brain/search": "workspace:*", "@brain/api": "workspace:*", "@brain/one": "workspace:*" }),
@@ -47,7 +47,7 @@ describe("tier direction rule", () => {
 
   it("checks every dependency field and ignores third-party packages", () => {
     const root = fixture({
-      "features/core-types/package.json": packageJson("@brain/core-types"),
+      "features/core-types/package.json": packageJson("@anvesx/core-types"),
       "features/a/package.json": packageJson("@brain/a"),
       "features/b/package.json": JSON.stringify({
         name: "@brain/b",

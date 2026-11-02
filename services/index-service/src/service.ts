@@ -1,4 +1,4 @@
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 import { verifyContent } from "./pipeline/content.js";
 import { createKeyedLock } from "./pipeline/lock.js";
 import { prepare } from "./pipeline/prepare.js";

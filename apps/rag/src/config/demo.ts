@@ -1,6 +1,6 @@
-import type { FakeDoc } from "@brain/connector-kit";
-import { createFakeConnector } from "@brain/connector-kit/testing";
-import type { Principal } from "@brain/core-types";
+import type { FakeDoc } from "@anvesx/connector-kit";
+import { createFakeConnector } from "@anvesx/connector-kit/testing";
+import type { Principal } from "@anvesx/core-types";
 import { createCursorStore } from "@rag/change-cursor";
 import type { RagDeps } from "../types.js";
 

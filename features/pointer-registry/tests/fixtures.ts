@@ -1,4 +1,4 @@
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 import { expect } from "vitest";
 import { RegistryError } from "../src/index.js";
 

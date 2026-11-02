@@ -1,4 +1,4 @@
-import { type Connector, ConnectorError, type FakeDoc } from "@brain/connector-kit";
+import { type Connector, ConnectorError, type FakeDoc } from "@anvesx/connector-kit";
 
 export interface Source extends Connector {
   put(doc: FakeDoc): void;

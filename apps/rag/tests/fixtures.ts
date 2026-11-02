@@ -1,4 +1,4 @@
-import type { FakeDoc } from "@brain/connector-kit";
+import type { FakeDoc } from "@anvesx/connector-kit";
 
 export const doc = (address: string, users: string[], text = "needle"): FakeDoc => ({
   address,

@@ -1,4 +1,4 @@
-import type { Principal } from "@brain/core-types";
+import type { Principal } from "@anvesx/core-types";
 import { QueryError, type SearchResult } from "@rag/query-service";
 import { describe, expect, it, vi } from "vitest";
 import { toOutcomeFn, toSearchFn } from "../../src/adapter.js";

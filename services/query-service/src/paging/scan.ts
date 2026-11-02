@@ -1,4 +1,4 @@
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 import type { Hit } from "@rag/hybrid-search";
 
 export const PAGE_SIZE = 100;

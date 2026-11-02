@@ -1,4 +1,4 @@
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 import type { Registry } from "@rag/pointer-registry";
 import { describe, expect, it } from "vitest";
 import { liveIds } from "../../src/runtime/known.js";

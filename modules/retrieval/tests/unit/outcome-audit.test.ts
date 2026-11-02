@@ -1,4 +1,4 @@
-import type { Pointer, Principal } from "@brain/core-types";
+import type { Pointer, Principal } from "@anvesx/core-types";
 import { describe, expect, it, vi } from "vitest";
 import type { Outcome } from "../../src/adapter.js";
 import { auditedOutcome, RetrievalError } from "../../src/index.js";

@@ -1,4 +1,4 @@
-import { contentHash, type ListedDoc } from "@brain/connector-kit";
+import { contentHash, type ListedDoc } from "@anvesx/connector-kit";
 
 const canon = (ids: string[]): string[] => [...new Set(ids)].sort();
 

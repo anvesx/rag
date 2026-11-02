@@ -1,4 +1,4 @@
-import type { Connector, ListedDoc } from "@brain/connector-kit";
+import type { Connector, ListedDoc } from "@anvesx/connector-kit";
 
 /** Wraps a connector to record what one run lists, and whether the run saw the whole listing. */
 export function watchListing(connector: Connector) {

@@ -1,4 +1,4 @@
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { connected, principal } from "./harness.js";
 

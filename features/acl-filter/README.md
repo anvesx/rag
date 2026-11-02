@@ -19,7 +19,7 @@ isAllowed(p: Principal, acl: Acl, rowTenant: string): boolean
 allowClause(p: Principal): { sql: string; params: unknown[] }
 ```
 
-Types come from `@brain/core-types`. `allowClause` expects columns `tenant_id` (text), `allow_users` and `allow_groups` (JSON arrays of strings stored as text).
+Types come from `@anvesx/core-types`. `allowClause` expects columns `tenant_id` (text), `allow_users` and `allow_groups` (JSON arrays of strings stored as text).
 
 ## Why the SQL is injection-proof
 

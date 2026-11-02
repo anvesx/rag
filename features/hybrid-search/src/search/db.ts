@@ -1,5 +1,5 @@
 import type { DatabaseSync, SQLInputValue } from "node:sqlite";
-import type { Acl } from "@brain/core-types";
+import type { Acl } from "@anvesx/core-types";
 import { SearchError } from "../errors.js";
 import type { Hit } from "../index.js";
 import type { RankedId } from "../rrf.js";

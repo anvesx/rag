@@ -1,4 +1,4 @@
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 import type { Hit } from "@rag/hybrid-search";
 import { createRegistry } from "@rag/pointer-registry";
 import { createQueryService, type QueryDeps } from "../src/index.js";

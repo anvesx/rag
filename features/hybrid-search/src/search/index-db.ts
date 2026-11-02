@@ -1,5 +1,5 @@
 import { DatabaseSync } from "node:sqlite";
-import type { Acl } from "@brain/core-types";
+import type { Acl } from "@anvesx/core-types";
 import * as sqliteVec from "sqlite-vec";
 import { SearchError } from "../errors.js";
 import type { AddChunk, Hit, SearchIndex, SearchQuery } from "../index.js";

@@ -2,8 +2,8 @@ import { mkdtempSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { DatabaseSync } from "node:sqlite";
-import type { FakeDoc } from "@brain/connector-kit";
-import type { Principal } from "@brain/core-types";
+import type { FakeDoc } from "@anvesx/connector-kit";
+import type { Principal } from "@anvesx/core-types";
 
 export const principal = (id: string, tenantId: string, groups: string[] = []): Principal => ({ id, tenantId, groups });
 

@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import type { Pointer } from "@brain/core-types";
+import type { Pointer } from "@anvesx/core-types";
 import { chunkText } from "@rag/chunker";
 import { createSearchIndex } from "@rag/hybrid-search";
 import { createRegistry } from "@rag/pointer-registry";
