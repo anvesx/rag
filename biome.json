@@ -1,0 +1,25 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
+  "files": {
+    "includes": [
+      "**",
+      "!**/dist",
+      "!**/reports",
+      "!**/.stryker-tmp",
+      "!**/node_modules",
+      "!**/.turbo",
+      "!**/test-results",
+      "!.claude",
+      "!.pnpmfile.cjs",
+      "!docs"
+    ]
+  },
+  "formatter": { "indentStyle": "space", "indentWidth": 2, "lineWidth": 160 },
+  "linter": { "enabled": true, "rules": { "recommended": true, "complexity": { "useLiteralKeys": "off" }, "style": { "noNonNullAssertion": "off" } } },
+  "overrides": [
+    {
+      "includes": ["features/change-cursor/tests/unit/diff.test.ts", "features/audit-chain/tests/unit/canonical.test.ts"],
+      "formatter": { "enabled": false }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+packages:
+  - "features/*"
+  - "services/*"
+  - "modules/*"
+  - "apps/*"
+  - "tools/*"
