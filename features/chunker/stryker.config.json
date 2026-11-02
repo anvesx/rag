@@ -1,5 +1,6 @@
 {
   "testRunner": "vitest",
+  "vitest": { "configFile": "vitest.stryker.config.ts" },
   "mutate": ["src/**/*.ts", "!src/index.ts"],
   "thresholds": {
     "high": 90,
