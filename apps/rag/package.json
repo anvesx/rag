@@ -1,0 +1,40 @@
+{
+  "name": "@rag/app",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "rag": "dist/bin.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "mutation": "stryker run"
+  },
+  "dependencies": {
+    "@rag/audit-chain": "workspace:*",
+    "@rag/audit-service": "workspace:*",
+    "@rag/change-cursor": "workspace:*",
+    "@rag/chunker": "workspace:*",
+    "@brain/connector-kit": "^0.1.0",
+    "@brain/connectors": "^0.1.0",
+    "@brain/core-types": "^0.1.0",
+    "@rag/embedder": "workspace:*",
+    "@rag/governance": "workspace:*",
+    "@rag/hybrid-search": "workspace:*",
+    "@rag/index-service": "workspace:*",
+    "@rag/ingestion": "workspace:*",
+    "@rag/mcp-service": "workspace:*",
+    "@rag/pointer-registry": "workspace:*",
+    "@rag/query-service": "workspace:*",
+    "@rag/retrieval": "workspace:*"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2"
+  }
+}
