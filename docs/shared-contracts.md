@@ -8,11 +8,11 @@ Three packages are published from another repository and consumed here as depend
 | `@anvesx/connector-kit` | The connector interface and a fake connector for tests. |
 | `@anvesx/connectors` | The GitHub and Drive connector adapters. |
 
-The scope `@brain` belongs to the repository that publishes them, so these names stay as they are. Every package in this repository uses the neutral scope `@rag`.
+The scope `@anvesx` belongs to the organization that publishes them. Every package in this repository uses the neutral scope `@rag`.
 
 ## Current state
 
-The package manifests declare version 0.1.0 for all three. That version is not published yet, so a plain install fails. The registry decision is pending. GitHub Packages is the recommended target, and the repository's npm configuration already points the @brain scope at it.
+The package manifests declare version 0.1.0 for all three. That version is not published yet, so a plain install fails. The registry decision is pending. GitHub Packages is the recommended target, and the repository's npm configuration already points the @anvesx scope at it.
 
 Installing straight from git does not work, for two reasons.
 
