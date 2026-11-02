@@ -1,0 +1,24 @@
+{
+  "name": "@rag/governance",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "mutation": "stryker run"
+  },
+  "dependencies": {
+    "@rag/audit-chain": "workspace:*",
+    "@rag/audit-service": "workspace:*",
+    "@brain/core-types": "^0.1.0",
+    "@rag/hybrid-search": "workspace:*",
+    "@rag/pointer-registry": "workspace:*",
+    "@rag/query-service": "workspace:*"
+  }
+}
