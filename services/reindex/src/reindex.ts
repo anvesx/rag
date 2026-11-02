@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import type { Connector } from "@anvesx/connector-kit";
 import { diffListing, type ListingDiff } from "@rag/change-cursor";
 import type { Doc, RankIndex } from "@rag/rank";
+import { assertToken } from "./token-error.js";
 
 /** Narrows a document's readers. `tag` names what the gate decides on (such as the zone), so a change in it reindexes. */
 export type Gate = ((doc: Doc) => Doc) & { tag?: (path: string) => string };
@@ -25,6 +26,7 @@ const chunks = <T>(all: readonly T[]): T[][] => Array.from({ length: Math.ceil(a
 
 /** Brings the rank index in line with `docs`: index created and updated documents, then drop deleted ones. */
 export async function reindex(d: ReindexDeps): Promise<ListingDiff> {
+  assertToken(d.token);
   const nodes = new Map(d.docs.map((n) => [n.id, n]));
   // The reader set is part of the tag, so an ACL change that leaves the source version alone still reindexes.
   const tag = (n: SourceDoc) => {

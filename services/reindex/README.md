@@ -11,7 +11,7 @@ reindex({ docs, connector, token, index, known, gate? }): Promise<ListingDiff>
 ```
 
 - `docs`: everything current now. A document missing from it counts as deleted.
-- `token`: the asking user's token, passed to every `connector.fetch`. There is no default.
+- `token`: the asking user's token, passed to every `connector.fetch`. There is no default. It fails closed: if the token is `undefined`, `null`, not a string, empty or only whitespace, `reindex` rejects with `TokenRequiredError` (`code: "TOKEN_REQUIRED"`, exported from the package) before it lists, fetches or indexes anything. The check runs at runtime because a JS caller can ignore the `string` type.
 - `known`: id to version map of what the index holds, updated in place only after both index steps commit, so a throw leaves the whole pass to retry.
 - `gate`: optional `(doc) => doc` that narrows readers. Its optional `tag(path)` joins the diffed version, so a change in what the gate decides reindexes an unedited document.
 
