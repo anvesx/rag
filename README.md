@@ -30,13 +30,13 @@ The demo mode uses a toy embedder and an unsigned token. Do not expose it beyond
 
 The repository is a pnpm and Turborepo workspace with four tiers. A package may depend only on tiers below it. `tools/structure-lint` enforces this.
 
-| Tier | Folder | Role |
-| --- | --- | --- |
+| Tier     | Folder      | Role                                                                      |
+| -------- | ----------- | ------------------------------------------------------------------------- |
 | features | `features/` | Single-purpose libraries such as the chunker and the hybrid search index. |
-| services | `services/` | Features wired into a service, such as indexing or querying. |
-| modules | `modules/` | Ingestion, retrieval and governance. |
-| apps | `apps/rag` | The runnable server. |
-| tools | `tools/` | Lint, fake-guard, integration, end-to-end and load tests. |
+| services | `services/` | Features wired into a service, such as indexing or querying.              |
+| modules  | `modules/`  | Ingestion, retrieval and governance.                                      |
+| apps     | `apps/rag`  | The runnable server.                                                      |
+| tools    | `tools/`    | Lint, fake-guard, integration, end-to-end and load tests.                 |
 
 Read [docs/architecture.md](docs/architecture.md) for the data flow.
 
