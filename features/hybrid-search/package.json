@@ -1,0 +1,30 @@
+{
+  "name": "@rag/hybrid-search",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "mutation": "stryker run"
+  },
+  "dependencies": {
+    "@brain/core-types": "^0.1.0",
+    "sqlite-vec": "0.1.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anvesx/rag.git",
+    "directory": "features/hybrid-search"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "license": "UNLICENSED"
+}

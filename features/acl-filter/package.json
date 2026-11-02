@@ -1,0 +1,32 @@
+{
+  "name": "@rag/acl-filter",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "mutation": "stryker run"
+  },
+  "dependencies": {
+    "@brain/core-types": "^0.1.0"
+  },
+  "devDependencies": {
+    "fast-check": "4.10.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anvesx/rag.git",
+    "directory": "features/acl-filter"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "license": "UNLICENSED"
+}
