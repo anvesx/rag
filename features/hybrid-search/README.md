@@ -58,4 +58,4 @@ query latency, not ingestion throughput or larger production dimensions.
 ## Verify
 
 Run `pnpm test`, `pnpm typecheck`, and `pnpm mutation` from this directory.
-The scale assertion is `<150 ms`; mutation must be at least 80%. Last run: 93.82 (run `pnpm exec stryker run --inPlace --concurrency 2`; the 150 ms scale test can flake at the default concurrency).
+The scale assertion is `<150 ms` locally and `<450 ms` when `CI` is set (shared runners are about 2.5x slower); mutation must be at least 80%. Last run: 93.82 (run `pnpm exec stryker run --inPlace --concurrency 2`; the 150 ms scale test can flake at the default concurrency).

@@ -2,6 +2,8 @@ import type { Acl } from "@anvesx/core-types";
 import { describe, expect, it } from "vitest";
 import { createSearchIndex } from "../../src/index.js";
 
+// Budget on a dev machine. Shared two-core CI runners measure about 2.5x slower (193 ms vs 76 ms), so CI gets 3x.
+const BUDGET_MS = process.env["CI"] ? 450 : 150;
 const acl: Acl = { allowUsers: [], allowGroups: [], version: 1 };
 
 describe("100k chunk scale", () => {
@@ -17,6 +19,6 @@ describe("100k chunk scale", () => {
       return performance.now() - started;
     });
     console.info(`hybrid-search scale: 100000 chunks, 5 runs, ${samples.map((ms) => ms.toFixed(2)).join(", ")} ms`);
-    expect(Math.max(...samples)).toBeLessThan(150);
+    expect(Math.max(...samples)).toBeLessThan(BUDGET_MS);
   });
 });
