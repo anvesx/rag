@@ -1,0 +1,26 @@
+{
+  "name": "@rag/index-service",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "mutation": "stryker run"
+  },
+  "dependencies": {
+    "@rag/chunker": "workspace:*",
+    "@brain/core-types": "^0.1.0",
+    "@rag/hybrid-search": "workspace:*",
+    "@rag/pointer-registry": "workspace:*"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  }
+}
