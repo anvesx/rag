@@ -1,5 +1,6 @@
 {
   "name": "rag",
+  "license": "MIT",
   "private": true,
   "version": "0.0.0",
   "packageManager": "pnpm@8.15.0",

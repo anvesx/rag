@@ -1,5 +1,6 @@
 {
   "name": "@rag/integration",
+  "license": "MIT",
   "version": "0.1.0",
   "type": "module",
   "private": true,
@@ -13,9 +14,9 @@
     "@rag/audit-service": "workspace:*",
     "@rag/change-cursor": "workspace:*",
     "@rag/chunker": "workspace:*",
-    "@brain/connector-kit": "^0.1.0",
+    "@anvesx/connector-kit": "^0.1.0",
     "@rag/connector-runtime": "workspace:*",
-    "@brain/core-types": "^0.1.0",
+    "@anvesx/core-types": "^0.1.0",
     "@rag/governance": "workspace:*",
     "@rag/hybrid-search": "workspace:*",
     "@rag/index-service": "workspace:*",

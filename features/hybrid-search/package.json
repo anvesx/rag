@@ -14,7 +14,7 @@
     "mutation": "stryker run"
   },
   "dependencies": {
-    "@brain/core-types": "^0.1.0",
+    "@anvesx/core-types": "^0.1.0",
     "sqlite-vec": "0.1.9"
   },
   "repository": {
@@ -26,5 +26,5 @@
     "registry": "https://npm.pkg.github.com",
     "access": "restricted"
   },
-  "license": "UNLICENSED"
+  "license": "MIT"
 }

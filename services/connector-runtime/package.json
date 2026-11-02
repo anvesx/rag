@@ -1,5 +1,6 @@
 {
   "name": "@rag/connector-runtime",
+  "license": "MIT",
   "version": "0.1.0",
   "type": "module",
   "main": "dist/index.js",
@@ -15,8 +16,8 @@
   },
   "dependencies": {
     "@rag/change-cursor": "workspace:*",
-    "@brain/connector-kit": "^0.1.0",
-    "@brain/core-types": "^0.1.0"
+    "@anvesx/connector-kit": "^0.1.0",
+    "@anvesx/core-types": "^0.1.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",

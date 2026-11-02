@@ -1,5 +1,6 @@
 {
   "name": "@rag/index-service",
+  "license": "MIT",
   "version": "0.1.0",
   "type": "module",
   "main": "dist/index.js",
@@ -15,7 +16,7 @@
   },
   "dependencies": {
     "@rag/chunker": "workspace:*",
-    "@brain/core-types": "^0.1.0",
+    "@anvesx/core-types": "^0.1.0",
     "@rag/hybrid-search": "workspace:*",
     "@rag/pointer-registry": "workspace:*"
   },

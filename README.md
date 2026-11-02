@@ -42,7 +42,7 @@ Read [docs/architecture.md](docs/architecture.md) for the data flow.
 
 ## Shared contracts
 
-Three packages come from outside this repository: `@brain/core-types`, `@brain/connector-kit` and `@brain/connectors`. They define the document, access-rule and connector types. Any host can consume this server alongside them. Company Brain is one such consumer. See [docs/shared-contracts.md](docs/shared-contracts.md) for how they are installed and what blocks a clean install today.
+Three packages come from outside this repository: `@anvesx/core-types`, `@anvesx/connector-kit` and `@anvesx/connectors`. They define the document, access-rule and connector types. Any host can consume this server alongside them. Company Brain is one such consumer. See [docs/shared-contracts.md](docs/shared-contracts.md) for how they are installed and what blocks a clean install today.
 
 ## Development
 
@@ -60,4 +60,4 @@ Lefthook runs these on commit and push. Never skip the hooks. See [docs/contribu
 
 ## License
 
-Not yet chosen. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).

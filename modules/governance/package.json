@@ -1,5 +1,6 @@
 {
   "name": "@rag/governance",
+  "license": "MIT",
   "version": "0.1.0",
   "type": "module",
   "main": "dist/index.js",
@@ -16,7 +17,7 @@
   "dependencies": {
     "@rag/audit-chain": "workspace:*",
     "@rag/audit-service": "workspace:*",
-    "@brain/core-types": "^0.1.0",
+    "@anvesx/core-types": "^0.1.0",
     "@rag/hybrid-search": "workspace:*",
     "@rag/pointer-registry": "workspace:*",
     "@rag/query-service": "workspace:*"

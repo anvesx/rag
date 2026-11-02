@@ -14,7 +14,7 @@
     "mutation": "stryker run"
   },
   "dependencies": {
-    "@brain/core-types": "^0.1.0",
+    "@anvesx/core-types": "^0.1.0",
     "@modelcontextprotocol/sdk": "1.32.2",
     "zod": "^4.6.7"
   },
@@ -27,5 +27,5 @@
     "registry": "https://npm.pkg.github.com",
     "access": "restricted"
   },
-  "license": "UNLICENSED"
+  "license": "MIT"
 }
