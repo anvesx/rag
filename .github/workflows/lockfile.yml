@@ -1,0 +1,16 @@
+name: lockfile
+on: workflow_dispatch
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 8.15.0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 26 }
+      - run: pnpm install --lockfile-only --no-frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_READ_TOKEN }}
+      - uses: actions/upload-artifact@v4
+        with: { name: pnpm-lock, path: pnpm-lock.yaml }

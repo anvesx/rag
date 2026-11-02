@@ -11,6 +11,3 @@ reports/
 .claude/worktrees/
 test-results/
 playwright-report/
-# local-only link of the shared contracts until the registry decision lands
-/.pnpmfile.cjs
-/pnpm-lock.yaml

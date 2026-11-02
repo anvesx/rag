@@ -10,15 +10,8 @@ Three packages are published from another repository and consumed here as depend
 
 The scope `@anvesx` belongs to the organization that publishes them. Every package in this repository uses the neutral scope `@rag`.
 
-## Current state
+## Consuming the packages
 
-The package manifests declare version 0.1.0 for all three. That version is not published yet, so a plain install fails. The registry decision is pending. GitHub Packages is the recommended target, and the repository's npm configuration already points the @anvesx scope at it.
+The packages come from GitHub Packages. The committed `.npmrc` maps the `@anvesx` scope to `https://npm.pkg.github.com` and reads the token from `NODE_AUTH_TOKEN`. CI sets it from the repository secret `NPM_READ_TOKEN`, a classic token with `read:packages`. Locally, export a token with the same scope before `pnpm install`. Installs use `--frozen-lockfile` against the committed `pnpm-lock.yaml`.
 
-Installing straight from git does not work, for two reasons.
-
-1. pnpm 8.15 cannot read a subfolder spec such as the core-types path on the company-brain repository. It fails with "Could not resolve path:/features/core-types to a commit".
-2. pnpm 10 reads the subfolder, then fails with ERR_PNPM_WORKSPACE_PKG_NOT_FOUND for the core-types dependency. The packages depend on each other through the workspace protocol, and they have no committed build output.
-
-## Local development
-
-Until the registry exists, link a checkout of the other repository. Add a gitignored pnpmfile at the repository root. It rewrites the three dependencies to local link paths. Build the three packages in that checkout first, then install.
+To regenerate the lockfile, run the `lockfile` workflow (workflow_dispatch). It uploads the new `pnpm-lock.yaml` as an artifact.
