@@ -1,5 +1,8 @@
 name: lockfile
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    branches: [ci/registry-consume]
 jobs:
   generate:
     runs-on: ubuntu-latest
