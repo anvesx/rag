@@ -1,0 +1,28 @@
+{
+  "name": "@rag/rank",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "bench": "pnpm build && node scripts/bench/run.mjs",
+    "mutation": "stryker run"
+  },
+  "devDependencies": {
+    "fast-check": "4.10.2",
+    "hdr-histogram-js": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anvesx/rag.git",
+    "directory": "features/rank"
+  },
+  "license": "MIT",
+  "private": true
+}

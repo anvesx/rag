@@ -180,6 +180,15 @@ importers:
         specifier: ^0.1.0
         version: 0.1.0
 
+  features/rank:
+    devDependencies:
+      fast-check:
+        specifier: 4.10.2
+        version: 4.10.2
+      hdr-histogram-js:
+        specifier: ^3.0.0
+        version: 3.0.1
+
   modules/governance:
     dependencies:
       '@anvesx/core-types':
@@ -331,6 +340,18 @@ importers:
         specifier: ^4.6.7
         version: 4.6.7
 
+  services/reindex:
+    dependencies:
+      '@anvesx/connector-kit':
+        specifier: ^0.1.0
+        version: 0.1.0
+      '@rag/change-cursor':
+        specifier: workspace:*
+        version: link:../../features/change-cursor
+      '@rag/rank':
+        specifier: workspace:*
+        version: link:../../features/rank
+
   tools/e2e:
     devDependencies:
       '@playwright/test':
@@ -387,6 +408,8 @@ importers:
       '@modelcontextprotocol/sdk':
         specifier: 1.32.2
         version: 1.32.2(zod@4.6.7)
+
+  tools/scale-k6: {}
 
   tools/scale-test:
     devDependencies:

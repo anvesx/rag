@@ -25,8 +25,8 @@ The pointer registry, the search index (SQLite with FTS5 and vectors), the curso
 
 | Tier | Packages |
 | --- | --- |
-| features | acl-filter, audit-chain, change-cursor, chunker, hybrid-search, mcp-search-tool, pointer-registry |
-| services | audit-service, connector-runtime, embedder, index-service, mcp-service, query-service |
+| features | acl-filter, audit-chain, change-cursor, chunker, hybrid-search, mcp-search-tool, pointer-registry, rank |
+| services | audit-service, connector-runtime, embedder, index-service, mcp-service, query-service, reindex |
 | modules | ingestion, retrieval, governance |
 | app | apps/rag |
 

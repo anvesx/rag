@@ -1,0 +1,11 @@
+{
+  "name": "@rag/scale-k6",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "scale": "node bin/run.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "license": "MIT"
+}
